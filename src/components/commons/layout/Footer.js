@@ -15,7 +15,7 @@ const Footer = () => {
         <footer className="page-footer font-small bg-primary"  style={{'font-size': '14px'}}>
             <div className="footer-copyright py-2 text-white">
                     <div className="col-12 text-right">
-                            Southern Horizon.&nbsp;&nbsp;
+                            GDV&nbsp;&nbsp;
                             {`Version ${profile.version}`}&nbsp;&nbsp;
                             {!isEmpty(profile.lastAccess) && (
                                 <span>

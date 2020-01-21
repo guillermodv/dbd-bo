@@ -1,6 +1,6 @@
 // Información de ejemplo - SESIÓN //
 const DATA = {
-    'email': 'prueba@sh.com',
+    'email': 'prueba@cdx.com',
     'name': 'Juan Carlos',
     'surname': 'Lopez',
     'password': 'prueba',
@@ -145,6 +145,22 @@ const ADDRESSES = [{
     "codpostal" : '1406'
 }];
 
+const ITEM = [{
+    "_id": '1',
+    "type": 'A',
+    "description": 'desc A',
+    "date": '15/01/2020',
+    "user": 'prueba',
+    "name": 'Prueba 1'
+},{
+    "_id": '2',
+    "type": 'B',
+    "description": 'desc B',
+    "date": '15/01/2020',
+    "user": 'prueba',
+    "name": 'Prueba 2'
+}];
+
 // Información de ejemplo - EVENTOS // 
 const EVENTS = [{
     "_id": '1',
@@ -205,7 +221,7 @@ const SERVICES = [{
     "_id": '2',
     "businessUnit": 'IBC',
     "services": 'Gerenciamiento',
-    "definition": 'IBC Mes: 200 | Proveedores: Carmocal'
+    "definition": 'IBC Mes: 200 | Proveedores'
 },{
     "_id": '3',
     "businessUnit": 'Isotanques',
@@ -273,6 +289,7 @@ export {EVENTS};
 export {OPPORTUNITIES};
 export {SERVICES};
 export {DATA};
+export {ITEM};
 export {TYPE};
 export {STATE};
 export {EVENTS_TYPE};
