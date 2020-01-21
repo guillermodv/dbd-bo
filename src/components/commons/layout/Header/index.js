@@ -22,7 +22,6 @@ const Header = () => {
     return (
         <Fragment>
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary " style={{'height': '40px', 'font-size': '14px'}}>
-                <img src="../../../../logo.png" style={{'width': '35px', 'border': '1px solid white'}} alt="..."/>
                 <span className="navbar-brand mx-1">
                     {profile && <a>BO</a>}
                 </span>

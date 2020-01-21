@@ -46,7 +46,7 @@ const Login = () => {
             {profile && redirect('/accounts')}
             &nbsp;
             <div className="row justify-content-center border-1">
-                <img src="../../../../logoLogin.png" alt={"..."}/>
+                Login
             </div>
             <div className="row justify-content-center border-1">
                 <div className="rom">
