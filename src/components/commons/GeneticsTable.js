@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {ModalNew, Pagination, ShowIcon, Showing} from "../commons";
 
-const GenericsTable = ({items = [], showDate = false , showId = true, showPagination = false, showTools = true, showUser = false, title = "Crear", description= ""}) => {
+const GenericsTable = ({items = [], showDate = false , showId = true, showPagination = false, showTools = true, showUser = false, title = "Add", description= ""}) => {
     const [showModal, setShowModal] = useState(false);
     const [item, setItem] = useState({});
 
@@ -25,9 +25,9 @@ const GenericsTable = ({items = [], showDate = false , showId = true, showPagina
                 <thead className="text-light bg-primary">
                 <tr>
                     {showId && <th className="text-left">Id</th>}
-                    <th className="text-left">Nombre</th>
-                    <th className="text-left">Descripción</th>
-                    {showDate && <th className="text-left">Fecha de Creación</th>}
+                    <th className="text-left">Name</th>
+                    <th className="text-left">Description</th>
+                    {showDate && <th className="text-left">Date</th>}
                     {showUser && <th className="text-left">User</th>}
                     {showTools && <th className="text-center"> </th>}
                 </tr>

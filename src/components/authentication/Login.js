@@ -43,7 +43,7 @@ const Login = () => {
 
     return(
         <Fragment>
-            {profile && redirect('/accounts')}
+            {profile && redirect('/dashboardItems')}
             &nbsp;
             <div className="row justify-content-center border-1">
                 Login

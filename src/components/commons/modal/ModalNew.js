@@ -14,7 +14,7 @@ const ModalNew = ({item, title, onAccept, onDismiss, description, large}) => (
             {description}
             <div className="row form-group">
                 <div className="col-5">
-                    <label>nombre:</label>
+                    <label>name:</label>
                     <input
                         type="string"
                         className="form-control"
@@ -24,7 +24,7 @@ const ModalNew = ({item, title, onAccept, onDismiss, description, large}) => (
                     />
                 </div>
                 <div className="col-7">
-                    <label>Descripción:</label>
+                    <label>description:</label>
                     <input
                         type="string"
                         className="form-control"

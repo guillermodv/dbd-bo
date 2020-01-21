@@ -1,3 +1,5 @@
+import Budget from "./Budget";
+import Bubble from "./Bubble";
 import LoadingIndicator from "./LoadingIndicator";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
@@ -13,10 +15,15 @@ import Pagination from "./layout/Pagination";
 import Showing from "./Showing";
 import Title from "./Title";
 import TitleWithButton from "./TitleWithButton";
+import TotalUsers from "./TotalUsers";
 import ShowIcon from "./ShowIcon";
 import ShowIconWithLabel from "./ShowIconWithLabel";
 import SelectWithLabel from "./SelectWithLabel";
+import TasksProgress from "./TasksProgress";
+import Donuts from "./Donuts";
 
+export {Budget};
+export {Bubble};
 export {Header};
 export {Menu};
 export {LoadingIndicator};
@@ -35,3 +42,6 @@ export {ShowIcon};
 export {ShowIconWithLabel};
 export {SelectWithLabel};
 export {Search};
+export {Donuts};
+export {TasksProgress};
+export {TotalUsers};

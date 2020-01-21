@@ -4,7 +4,7 @@ const UnderConstruction = () => (
     <div className="text-center icon-container">
         <br/>
         <br/>
-        <h1>Proximamente...</h1>
+        <h1>Under Construction...</h1>
     </div>
 );
 

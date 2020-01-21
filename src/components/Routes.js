@@ -1,15 +1,16 @@
 import React, {useEffect} from 'react';
-import {useSelector, useDispatch} from 'react-redux';
+import {useDispatch} from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {Footer, Header} from "./commons";
-import OpportunitiesList from "./opportunities";
+import DashboardList from "./dashboard";
+import DashboardItem from "./dashboard/dashboardItem";
+
 import UnderConstruction from "./commons/UnderConstruction";
 import Login from "./authentication/Login";
 import {requestFetchSession} from "../actions/session";
 
 const Routes = () => {
     const dispatch = useDispatch();
-    const profile = useSelector(state => state.session.profile);
 
     useEffect(() => {
         dispatch(requestFetchSession());
@@ -19,13 +20,12 @@ const Routes = () => {
         <Router>
             <Header/>
             <Switch>
-                {!profile && <Route exact path="/" component={Login}/>}
-                {!profile && <Route exact path="/login" component={Login}/>}
-                {!profile && <Route exact path="/*" component={Login}/>}
-                {profile && <Route exact path="/login" component={Login}/>}
-                {profile && <Route exact path="/" component={OpportunitiesList}/>}
-                {profile && <Route exact path="/list" component={OpportunitiesList}/>}
-                {profile && <Route exact path="/*" component={UnderConstruction}/>}
+                {<Route exact path="/login" component={Login}/>}
+                {<Route exact path="/" component={DashboardList}/>}
+                {<Route exact path="/dashboard" component={DashboardList}/>}
+                {<Route exact path="/dashboard/:id" component={DashboardItem}/>}
+                {<Route exact path="/list" component={DashboardList}/>}
+                {<Route exact path="/*" component={UnderConstruction}/>}
             </Switch>
             <Footer/>
         </Router>

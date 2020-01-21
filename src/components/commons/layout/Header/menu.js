@@ -6,8 +6,8 @@ const Menu = ({profile}) => {
         <div className="collapse navbar-collapse" id="navbarColor01">
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item">
-                    <Link to={'/opportunities'} className="nav-link">
-                        Abm
+                    <Link to={'/dashboard'} className="nav-link">
+                        Dashboard
                     </Link>
                 </li>
             </ul>
